@@ -78,6 +78,8 @@ df_preds = pl.run()
   <img src="https://github.com/kyang4881/Sentiment-Analysis-with-LLMs/blob/main/docs/images/confusion_mat1.png" width="1200" />
 </p>
 
+The small model took 0.72 minutes to run. Let's move on to the Base model.
+
 ---
 
 ## Experiment 2: Flan-T5-Base
@@ -115,9 +117,11 @@ df_preds = pl.run()
   <img src="https://github.com/kyang4881/Sentiment-Analysis-with-LLMs/blob/main/docs/images/confusion_mat2.png" width="1200" />
 </p>
 
+The base model managed to obtain improved performance. It took 2.69 minutes to run. Let's check the Large model next.
+
 ---
 
-## Experiment 2: Flan-T5-Large
+## Experiment 3: Flan-T5-Large
 
 ```python
 
@@ -151,6 +155,8 @@ df_preds = pl.run()
 <p align="center">
   <img src="https://github.com/kyang4881/Sentiment-Analysis-with-LLMs/blob/main/docs/images/confusion_mat3.png" width="1200" />
 </p>
+
+The large model had a better performance compared to the base model. Though it took longer to run (9.78 mins), the performance gains outweigh the latency
 
 ---
 
